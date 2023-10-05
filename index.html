@@ -10,28 +10,55 @@
     <main class="page-main">
         <!-- form calc passenger -->
         <section class="calc-ticket">
+            <h1 class="text-center text-white">Calcola il prezzo del tuo biglietto</h1>
             <div class="container">
-                <h1>Calcola il prezzo del tuo biglietto</h1>
+                <div class="text-center">
                 <div>
-                    <input type="text" id="name-passenger" name="name-surname" placeholder="inserisci nome/cognome">
-                    <input type="text" id="Km-passenger" name="Km-passeger" placeholder="Inserisci chilometri">
-                    <span>
+                    <div>
+                        <input type="text" id="name-passenger" name="name-surname" placeholder="inserisci nome/cognome">
+                        <input type="text" id="Km-passenger" name="Km-passeger" placeholder="Inserisci chilometri">
                         <select name="discount" id="discount">
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
                             <option value="over65">Over 65</option>
                         </select>
-                    </span>
+                    </div>
                     <div>
                         <button id="btn-calc">Genera</button>
                         <button id="btn-cancel">Annulla</button>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
         <!-- ticket passenger -->
         <section class="your-ticket">
-
+            <h2 class="text-center text-white">Il tuo biglietto</h2>
+            <div class="container">
+                <div class="row">
+                <h3>Dettaglio passeggeri</h3>
+                <table class="table-passenger">
+                    <thead>
+                        <tr>
+                            <th>Nome passegero</th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice IP</th>
+                            <th>Costo Biglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span id="name">nome e cognome</span></th>
+                            <th><span>Biglietto</span></th>
+                            <th><span>carrozza</span></th>
+                            <th><span>codice</span></th>
+                            <th><span id="price">Costo</span>&euro;</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
         </section>
     </main>
     <script src="./js/app.js"></script>
