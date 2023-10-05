@@ -10,7 +10,24 @@
     <main class="page-main">
         <!-- form calc passenger -->
         <section class="calc-ticket">
-            <div class="container"></div>
+            <div class="container">
+                <h1>Calcola il prezzo del tuo biglietto</h1>
+                <div>
+                    <input type="text" id="passenger" name="name-surname" placeholder="inserisci nome/cognome">
+                    <input type="text" id="Km" name="Km-passeger" placeholder="Inserisci chilometri">
+                    <span>
+                        <select name="discount" id="discount">
+                            <option value="0">Minorenne</option>
+                            <option value="1">Maggiorenne</option>
+                            <option value="2">Over 65</option>
+                        </select>
+                    </span>
+                    <div>
+                        <button id="btn-calc">Genera</button>
+                        <button id="btn-cancel">Annulla</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- ticket passenger -->
         <section class="your-ticket">
