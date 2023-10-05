@@ -9,6 +9,10 @@ console.log('Name user ' + namePassengerDomElement);
 const kmPassengerDomElement = document.getElementById('Km-passenger');
 console.log('kilometri user ' + kmPassengerDomElement);
 
+// Km base price
+let priceBaseKilometre;
+priceBaseKilometre = 0.21;
+console.log ('prezzo base kilometro', priceBaseKilometre);
 
 // Button calc
 const btnCalcDOMElement = document.getElementById('btn-calc');
@@ -18,11 +22,13 @@ btnCalcDOMElement.addEventListener('click', function () {
 
 	console.log(btnCalcDOMElement.value + 'Ho cliccato');
 
-    const kmRoad = parseFloat(kmPassengerDomElement.value)
-    console.log('Km passenger ' + kmRoad)
+    const kmPassenger = parseFloat(kmPassengerDomElement.value)
+    console.log('Km passenger ' + kmPassenger)
 
-    const totalPrice = KmRoad * 0.21;
+    const totalPrice = kmPassenger * priceBaseKilometre;
     console.log('Prezzo totale ' + totalPrice);
+
+    
 
 	
 	
