@@ -36,15 +36,15 @@ btnCalcDOMElement.addEventListener('click', function () {
 	console.log(selDomElement.value + ' Ho cliccato');
 
     const nameSurname = namePassengerDomElement.value;
-    console.log(nameSurname);
+    console.log(nameSurname)
 
     let name = nameSurname;
 
-    const nameDomElement = document.getElementById ("name");
+    const nameDomElement = document.getElementById ("name")
     nameDomElement.innerHTML = name;
 
-    const kmPassenger = parseFloat(kmPassengerDomElement.value);
-    console.log('Km passenger ' + kmPassenger);
+    const kmPassenger = parseFloat(kmPassengerDomElement.value)
+    console.log('Km passenger ' + kmPassenger)
 
     const totalPrice = kmPassenger * priceBaseKilometre;
     console.log('Prezzo totale ' + totalPrice);
@@ -64,7 +64,6 @@ btnCalcDOMElement.addEventListener('click', function () {
     }
         // - ALTRIMENTI
     else {
-            
         discount = 0;
         //          - non si hanno sconti
         console.log('niente sconto');
