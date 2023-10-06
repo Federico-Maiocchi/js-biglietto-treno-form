@@ -5,13 +5,6 @@
 const namePassengerDomElement = document.getElementById('name-passenger');
 console.log('Name user ' + namePassengerDomElement);
 
-// let nameSurname = namePassengerDomElement.value
-// console.log(namePassengerDomElement.value)
-
-// const nameDomElement = document.getElementById('nameSurname')
-// nameDomElement.innerHTML = nameSurname
-
-// console.log(nameDomElement)
 // - input inserimento km utente
 const kmPassengerDomElement = document.getElementById('Km-passenger');
 console.log('kilometri user ' + kmPassengerDomElement);
@@ -24,8 +17,7 @@ console.log ('prezzo base kilometro', priceBaseKilometre);
 // Discount
 const selDomElement = document.getElementById('discount');
 
-// section year
-let ageDiscount = selDomElement.value
+
 
 // Button calc
 const btnCalcDOMElement = document.getElementById('btn-calc');
@@ -49,6 +41,10 @@ btnCalcDOMElement.addEventListener('click', function () {
     const totalPrice = kmPassenger * priceBaseKilometre;
     console.log('Prezzo totale ' + totalPrice);
 
+    // section year
+    let ageDiscount = selDomElement.value
+
+    
     let discount
 
     if ( ageDiscount == "minorenne") {
